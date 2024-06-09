@@ -1,0 +1,233 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  /* background-image: url(https://static.vecteezy.com/system/resources/previews/006/665/708/original/graphic-of-geometry-pattern-design-with-dark-blue-light-blue-yellow-purple-and-white-color-scheme-perfect-for-pattern-of-textile-industry-vector.jpg); */
+  background-image: url(background3.jpg);
+  background-size: cover;
+  background-position: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formbox{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  /* background-color: rgb(238, 199, 71); */
+  /* background-color: black; */
+  backdrop-filter: blur(50px);
+  padding: 20px;
+  box-shadow: 10px 10px 20px rgb(26, 107, 134);
+  width: 60vw;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  /* border: 2px solid black; */
+} 
+
+.leftreal{
+  display: none;
+}
+
+.left{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+  width: 60%;
+}
+
+.left > h2 {
+  /* color:rgb(0, 100, 128); */
+  color: white;
+  text-shadow: 3px 3px 4px black;
+  font-size: 4.8vw;
+}
+
+.left .redirect{
+  display: flex;
+  
+}
+
+.redirect p{
+  text-decoration: none;
+  color: white;
+  margin: 20px 5px;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.redirect a{
+  text-decoration: none;
+  color: black;
+  margin: 20px 5px;
+  padding: 3px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.redirect a:hover{
+  color:black;
+  /* background-color: black;  */
+  padding: 4px;
+  transform: scale(1.4);
+}
+
+.account{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.account a{
+  border: 1px solid white;
+  color: black;
+  background-color: white;
+  margin: 20%;
+  border-radius: 45%;
+  padding: 15% 20%;
+  transition: transform 0.3s ease;
+}
+
+.account a:hover{
+  border: 1px solid black;
+  transform: scale(1.4);
+}
+
+.right{
+  width: 40%;
+  margin: 10px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main label{
+  margin-bottom: 5px;
+  text-align: left;
+  color: white;
+}
+
+.main input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 18vw;
+  background-color: rgb(241, 240, 230);
+}
+
+form > div {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.main #done {
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: #46e378;
+  color: #fff;
+  width: 10vw;
+}
+
+.main #done:hover {
+  background-color: #20b867;
+}
+
+
+input:focus:invalid {
+  color: red;
+  border: red 3px solid;
+}
+
+@media(max-width: 600px){
+  body{
+    background-color: black;
+    background-image: none;
+  }
+
+  .left{
+    display: none;
+  }
+
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    border-radius: 0;
+    background-color: black;
+    box-shadow: 0px 0px 0px black;
+  }
+
+  .leftreal{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leftreal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    width: 100%;
+    height: 50%;
+  }
+
+  .leftreal h2{
+    color: white;
+    text-shadow: 3px 3px 4px black;
+    font-size: 30%;
+  }
+  
+  
+  .leftreal .redirect{
+    display: flex; 
+  }
+
+  .leftreal .redirect a{
+    color: white;
+  }
+  
+  .right{
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main input{
+    width: 50vw;
+  }
+
+  .main #done{
+    width: 30vw;
+  }
+}
